@@ -9,6 +9,7 @@ export const GlobalStyle = createGlobalStyle`
         font-weight: 400;
         color: ${props=>props.theme.white};
         font-size: 1rem;
+        font-family: 'Epilogue', sans-serif;
     }
 
     body{

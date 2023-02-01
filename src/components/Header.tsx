@@ -14,6 +14,10 @@ const HeaderContainer = styled.header`
 
     h1{
         text-align: center;
+        font-weight: 800;
+        font-size: 2.5rem;
+        line-height: 3rem;
+        padding-bottom: 5rem;
     }
 `;
 

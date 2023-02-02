@@ -1,4 +1,16 @@
-import styled from"styled-components";
+import styled, { keyframes } from"styled-components";
+
+const AnimationPhotos = keyframes`
+    0%{
+        opacity: 0;
+        transform: scale(0);
+    }
+
+    100%{
+        opacity: 1;
+        transform: scale(1);
+    }
+`;
 
 const ImageContainerTotal = styled.div`
 
@@ -7,6 +19,8 @@ const ImageContainerTotal = styled.div`
 
     max-width: 22rem;
     margin: 0 auto; 
+
+    animation: ${AnimationPhotos} 0.5s;
 
     img{
         width: 100%;

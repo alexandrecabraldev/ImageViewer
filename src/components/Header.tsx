@@ -1,7 +1,21 @@
-import styled from "styled-components";
+import styled, {keyframes} from "styled-components";
+
+
+const TopDown = keyframes`
+     0%{  
+        transform: translateY(-25%);
+        opacity: 0;
+     }
+
+     100%{
+        transform: translateY(0);
+        opacity: 1;
+     }
+`;
 
 const HeaderContainer = styled.header`
 
+    animation: ${TopDown} 0.5s;
     span{
         display: block;
         font-size: 1rem;
@@ -20,6 +34,7 @@ const HeaderContainer = styled.header`
         padding-bottom: 5rem;
     }
 `;
+
 
 export function Header(){
     return(

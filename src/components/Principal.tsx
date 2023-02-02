@@ -5,17 +5,29 @@ const ImageContainerTotal = styled.div`
     display: grid;
     gap: 2rem;
 
+    max-width: 22rem;
+    margin: 0 auto; 
+
     img{
         width: 100%;
         height: 26rem;
         object-fit: cover;        
         border-radius: 6px;
+        cursor: pointer;
+        transition: all 0.2s;
+        //all seleciona todas as propriedades, nesse caso a opacity e o transform;
+
+        &:hover{
+            opacity: 0.7;
+            transform: scale(1.1);
+            
+        }
     }
 `;
 
 const ImageContainer = styled.div`
     position: relative;
-
+    
     h2{
         position:absolute;
         display: grid;

@@ -1,6 +1,5 @@
 import styled, {keyframes} from "styled-components";
 
-
 const TopDown = keyframes`
      0%{  
         transform: translateY(-25%);

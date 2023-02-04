@@ -16,7 +16,6 @@ const ImageContainerTotal = styled.div`
 
     display: grid;
     gap: 2rem;
-
     max-width: 22rem;
     margin: 0 auto; 
 
@@ -37,7 +36,44 @@ const ImageContainerTotal = styled.div`
             
         }
     }
-`;
+
+    @media(min-width: 440px) {
+        grid-template-columns: 98%;
+        max-width: 1170px;
+    } 
+
+    @media (min-width: 700px) {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    @media (min-width: 820px) {
+        grid-template-columns: none;
+        max-width: 1170px;
+        grid-template-areas: "A B B"
+                             "C C D";
+
+        img{
+            width: 98%;
+        }
+
+        div:nth-child(1){
+            grid-area: A;
+        }
+
+        div:nth-child(2){
+            grid-area: B;
+        }
+
+        div:nth-child(3){
+            grid-area: C;
+        }
+
+        div:nth-child(4){
+            grid-area: D;
+        } 
+    }
+ 
+`; 
 
 const ImageContainer = styled.div`
     position: relative;
@@ -84,7 +120,7 @@ export function Principal(){
                 <img src="https://images.unsplash.com/photo-1535303311164-664fc9ec6532?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" alt="" />
                 
                 <h2>
-                    <span>Smartfhone</span>
+                    <span>Smartphone</span>
                     Iphone 
                 </h2>
             </ImageContainer>
